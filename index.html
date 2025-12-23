@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centurion Push-Up Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              military: {
+                50: '#f4f6f4',
+                100: '#e3e8e3',
+                200: '#c5d0c5',
+                300: '#9baa9b',
+                400: '#758c75',
+                500: '#556f55',
+                600: '#415741',
+                700: '#354635',
+                800: '#2c392c',
+                900: '#263026',
+                950: '#131913',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* Custom scrollbar for log */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-military-50 dark:bg-military-950 text-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col">
+    <div id="root" class="flex-grow flex flex-col"></div>
+  </body>
+</html>
